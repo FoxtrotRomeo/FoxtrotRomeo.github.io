@@ -12,7 +12,7 @@ title                    : "Franco Rugolon"
 title_separator          : "-"
 name                     : "Franco Rugolon"
 description              : "PhD student in Data Science at Stockholm University. Multimodal machine learning and explainability for healthcare and psychotherapy."
-url                      : "https://YOURUSERNAME.github.io"
+url                      : "https://foxtrotromeo.github.io"
 baseurl                  : ""
 repository               : "FoxtrotRomeo/FoxtrotRomeo.github.io"
 
@@ -21,7 +21,7 @@ repository               : "FoxtrotRomeo/FoxtrotRomeo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   name             : "Franco Rugolon"
-  avatar           : "PhD2026 2.jpg"
+  avatar           : "profile.jpg"
   bio              : "PhD student, Department of Computer and Systems Sciences"
   location         : "Stockholm, Sweden"
   employer         : "Stockholm University"
