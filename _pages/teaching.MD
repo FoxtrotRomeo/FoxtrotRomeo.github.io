@@ -66,9 +66,9 @@ Proposals outside these areas are welcome. Write to me at [franco.rugolon@dsv.su
     </p>
   </div>
   <div class="entry">
-    <div class="entry-when">2026</div>
+    <div class="entry-when">2024</div>
     <p class="entry-what">
-      Predicting the Onset of Metastasis by Multimodal Machine Learning in Lung Cancer and Melanoma Patients — STUDENT NAME
+      Predicting the Onset of Metastasis by Multimodal Machine Learning in Lung Cancer and Melanoma Patients — Nikita Arora
     </p>
   </div>
   <div class="entry">
