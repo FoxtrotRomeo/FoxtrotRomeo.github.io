@@ -5,32 +5,24 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+{% if site.author.googlescholar %}
+<p>You can also find these on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
 {% endif %}
 
+<p>Several of the entries below are student-led. Where a paper grew out of a Master's thesis I supervised, I've noted it — see the <a href="{{ base_path }}/teaching/">teaching page</a> for the full list of thesis projects.</p>
 
+## Journal articles and preprints
 
+{% assign articles = site.publications | where: "category", "manuscripts" | sort: "date" | reverse %}
+{% for post in articles %}
+  {% include archive-single.html %}
+{% endfor %}
+
+## Conference and workshop papers
+
+{% assign papers = site.publications | where: "category", "conferences" | sort: "date" | reverse %}
+{% for post in papers %}
+  {% include archive-single.html %}
+{% endfor %}
