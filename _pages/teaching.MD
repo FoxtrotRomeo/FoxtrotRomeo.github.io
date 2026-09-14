@@ -51,36 +51,14 @@ Proposals outside these areas are welcome. Write to me at [franco.rugolon@dsv.su
 ## Completed theses
 
 <div class="entries">
+{% assign theses = site.data.theses | sort: "year" | reverse %}
+{% for t in theses %}
   <div class="entry">
-    <div class="entry-when">2025</div>
+    <div class="entry-when">{{ t.year }}</div>
     <p class="entry-what">
-      Evaluating Explainability Techniques for Machine Learning in Healthcare — Katja Wilde
-      <span class="venue">Published as <a href="/publication/2026-explainability-expert-interviews">a human-centered evaluation through expert interviews</a>, ECML PKDD Workshops 2026</span>
+      {{ t.title }} — {{ t.student }}{% if t.co %} (co-supervised){% endif %}
+      {% if t.paper_url %}<span class="venue">Published as <a href="{{ t.paper_url | relative_url }}">{{ t.paper_note }}</a></span>{% endif %}
     </p>
   </div>
-  <div class="entry">
-    <div class="entry-when">2025</div>
-    <p class="entry-what">
-      Predicting Chronic Kidney Disease in Jalisco: An XAI-Enhanced Multimodal Approach with Geospatial and Demographic Data — Kevin Igor Arjona Cardenas
-      <span class="venue">Published as <a href="/publication/2026-ckd-geo">CKD-GEO</a>, ECML PKDD Workshops 2026</span>
-    </p>
-  </div>
-  <div class="entry">
-    <div class="entry-when">2024</div>
-    <p class="entry-what">
-      Predicting the Onset of Metastasis by Multimodal Machine Learning in Lung Cancer and Melanoma Patients — Nikita Arora
-    </p>
-  </div>
-  <div class="entry">
-    <div class="entry-when">2026</div>
-    <p class="entry-what">
-      Predicting Symptom Change in Functional Somatic Syndromes through Multimodal Machine Learning and Explainability — Karin Grandin
-    </p>
-  </div>
-  <div class="entry">
-    <div class="entry-when">2025</div>
-    <p class="entry-what">
-      Integrating Genetics and Epigenetics for Predicting the Mutational Landscape in Lung Adenocarcinoma — Alexandros Alexakos
-    </p>
-  </div>
+{% endfor %}
 </div>
