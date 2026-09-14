@@ -1,0 +1,49 @@
+# Supervised and co-supervised Master's theses.
+# Order here doesn't matter — the page sorts by year, newest first.
+#
+# year        the year the thesis was completed (a number, not quoted)
+# title       thesis title
+# student     student name
+# co          optional, set to true if you co-supervised rather than supervised
+# paper_url   optional, link to the resulting publication
+# paper_note  optional, how to describe the resulting publication
+
+- year: 2025
+  title: "Evaluating Explainability Techniques for Machine Learning in Healthcare"
+  student: "Katja Wilde"
+  paper_url: "/publication/2026-explainability-expert-interviews"
+  paper_note: "a human-centered evaluation through expert interviews, ECML PKDD Workshops 2026"
+
+- year: 2025
+  title: "Predicting Chronic Kidney Disease in Jalisco: An XAI-Enhanced Multimodal Approach with Geospatial and Demographic Data"
+  student: "Kevin Igor Arjona Cardenas"
+  paper_url: "/publication/2026-ckd-geo"
+  paper_note: "CKD-GEO, ECML PKDD Workshops 2026"
+
+- year: 2024
+  title: "Predicting the Onset of Metastasis by Multimodal Machine Learning in Lung Cancer and Melanoma Patients"
+  student: "Nikita Arora"
+
+- year: 2025
+  title: "Predicting Symptom Change in Functional Somatic Syndromes through Multimodal Machine Learning and Explainability"
+  student: "Zhao Chen"
+
+- year: 2026
+  title: "Employing Machine Learning on Multimodal Nonverbal Behavioral Data for Outcome Prediction in Dyadic Negotiations"
+  student: "Karin Grandin"
+
+- year: 2026
+  title: "Omega-3 and Cardiovascular Risk: A Machine Learning and Causal Inference Approach in the Swedish Population"
+  student: "Pamela Abigail Castillo Gonzalez"
+
+- year: 2025
+  title: "Integrating Genetics and Epigenetics for Predicting the Mutational Landscape in Lung Adenocarcinoma"
+  student: "Alexandros Alexakos"
+
+- year: 2026
+  title: "Multimodal Data Science Approaches for Predictive Modeling in Healthcare"
+  student: "Konstantina Voukelatou"
+
+- year: 2026
+  title: "Applying Large Language Models to cancer classification using genetic Data"
+  student: "Luca Fynn Eckelmann"
